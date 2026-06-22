@@ -1,0 +1,26 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Output figures (regenerate via scripts; keep curated ones in figures/ manually)
+*.png
+!figures/*.png
+
+# Mathematica backup files
+*.nb~
