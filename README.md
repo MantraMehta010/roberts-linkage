@@ -99,15 +99,23 @@ getting the determinant exactly right matters for everything downstream.
 
 If you spot the bug, open a PR or issue.
 
-## Status / TODO
+## `src/linkage1.1.2.py`
 
-- [ ] Resolve the sextic degree mismatch in `symbolic_determinant()`
-- [ ] Cross-check Table 1 parameters against the paper's figures (ongoing)
-- [ ] Port the isotropic-coordinate optimisation (Section 6 of the notes) from
-      the homotopy-continuation formulation into a Python equivalent
-- [ ] Add unit tests for `four_bar_solve` against known Grashof configurations
+A corrected kinematic model of the physical linkage as actually built and
+verified in Linkage. Unlike `roberts_linkage.py`'s coupler-curve/sextic
+analysis, this file matches the real six-link topology (no direct C-D
+link; P and L are independent apexes on the same base C-D) and includes:
+
+- Forward kinematics for the dual-driven (A, B counter-rotating) mechanism
+- An interactive explorer with sliders for θ, L depth, q, and W
+- A stability-crossing search (`find_q_crossing` / `solve_q_crossing`)
+  that locates the base depth q at which the load point's trace flips
+  from convex to concave
+
+See `notes/VSP_code_doc.pdf` for full function documentation.
 
 ## Acknowledgements
 
 Supervised by Dr. Apratim Ganguly, IUCAA. Built on the theoretical framework of
-Angeles and of Baskar, Plecnik & Hauenstein (2023).
+Angeles and of Baskar, Plecnik & Hauenstein (2023) and the ultra low frequency roberts linkage vibration isolator model by Dumas & Blair(2010)
+
