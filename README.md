@@ -30,9 +30,11 @@ classification, is in [`notes/coupler_curves_notes.pdf`](notes/coupler_curves_no
 ```
 roberts-linkage/
 ├── src/
-│   └── roberts_linkage.py     # main analysis script (Python port of RobertsLinkage.nb)
+│   └── roberts_linkage.py
+|   └── linkage1.1.2.py      # main analysis script (Python port of RobertsLinkage.nb)
 ├── notes/
-│   └── coupler_curves_notes.pdf   # derivation notes (Angeles + Baskar et al.)
+│   └── coupler_curves_notes.pdf
+|   └── VSP_code_doc.pdf    # derivation notes (Angeles + Baskar et al.)
 ├── figures/                   # sample output plots
 ├── requirements.txt
 └── README.md
